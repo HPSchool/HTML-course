@@ -201,5 +201,20 @@ html
         h3 Now you have pictures to!
         img(src="/images/happening.gif", alt="")
 
+      section
+        h3 Let's make some links
+        p type
+        pre
+          code.language-javascript.
+            a
+        p And hit that [tab]
+        pre
+          code.language-javascript(style="font-size: 60%").
+            ...
+              &#x3C;img src=&#x22;http://i.imgur.com/7drHiqr.gif&#x22; alt=&#x22;Oops the picture is broken&#x22; /&#x3E;
+              &#x3C;a href=&#x22;http://www.google.com&#x22;&#x3E;Google&#x3C;/a&#x3E;
+              &#x3C;a href=&#x22;http://www.google.com&#x22; target=&#x22;_blank&#x22;&#x3E;Google&#x3C;/a&#x3E;
+            &#x3C;/body&#x3E;
+
     script(src='build/build.js')
 
