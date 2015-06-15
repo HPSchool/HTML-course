@@ -135,18 +135,20 @@ html
       section
         h3 Let's add some <span style="color:red;font-size: 70%">&#x3C;</span>p<span style="color:red;font-size: 70%">&#x3E;</span>aragraph text
         pre
-          code.language-javascript.
-            &#x3C;body&#x3E;
-              &#x3C;h1&#x3E;YoloSw4g&#x3C;/h1&#x3E;
-              &#x3C;h2&#x3E;other yolo&#x3C;/h2&#x3E;
-              &#x3C;h3&#x3E;other sw4g&#x3C;/h3&#x3E;
-              &#x3C;h6&#x3E;Is the limit&#x3C;/h6&#x3E;
+          code.language-javascript(style="font-size: 80%").
+              ...
+                &#x3C;h3&#x3E;other sw4g&#x3C;/h3&#x3E;
+                &#x3C;p&#x3E;
+                  Hello Bro
+                  this is still the same line
+                  &#x3C;br&#x3E;
+                  break tags make new lines
+                  &#x3C;br&#x3E;
+                  &#x3C;bold&#x3E;some bold text&#x3C;/bold&#x3E;
+                  and some &#x3C;i&#x3E;Italic text&#x3C;/i&#x3E;
+                &#x3C;/p&#x3E;
 
-              &#x3C;p&#x3E;
-                Hello Bro
-              &#x3C;/p&#x3E;
-
-            &#x3C;/body&#x3E;
+              &#x3C;/body&#x3E;
 
       section
         h3 You are a true writer now
@@ -155,7 +157,7 @@ html
       section
         h3 Our code so far
         pre
-          code.language-javascript.
+          code.language-javascript(style="font-size: 70%").
             &#x3C;!DOCTYPE html&#x3E;
             &#x3C;html&#x3E;
               &#x3C;head&#x3E;
@@ -169,10 +171,16 @@ html
 
                 &#x3C;p&#x3E;
                   Hello Bro
+                  this is still the same line
+                  &#x3C;br&#x3E;
+                  break tags make new lines
+                  &#x3C;br&#x3E;
+                  &#x3C;bold&#x3E;some bold text&#x3C;/bold&#x3E;
+                  and some &#x3C;i&#x3E;Italic text&#x3C;/i&#x3E;
                 &#x3C;/p&#x3E;
-
               &#x3C;/body&#x3E;
             &#x3C;/html&#x3E;
+
 
       section
         h3 Good job!
@@ -221,7 +229,9 @@ html
         p Also Known as Cascading Style Sheets
         img(src="/images/bob-ross.jpg", width="200px" alt="")
         ul
-          li changes color of the site
+          li Changes colors of the site
+          li Changes the letters on your sites
+          li Changes small animations on your sites
           li makes the site look awesome!
 
     script(src='build/build.js')
