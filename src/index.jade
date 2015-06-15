@@ -48,8 +48,9 @@ html
 
       section
         h3 Write the following text
-        code.language-html.
-          html
+        pre
+          code.language-javascript.
+            html
         p <br> And now hit:
         img(src="/images/tab.jpg", width="200px", alt="")
 
@@ -233,6 +234,46 @@ html
           li Changes the letters on your sites
           li Changes small animations on your sites
           li makes the site look awesome!
+
+      section
+        h3 linking
+        p We need to link an external css file to our site. type the code below in &#x3C;head&#x22;
+        pre
+          code.language-javascript.
+            link
+        p and hit tab
+        pre
+          code.language-javascript(style="font-size: 60%").
+            &#x3C;head&#x3E;
+              &#x3C;meta name=&#x22;charset&#x22; content=&#x22;utf-8&#x22;&#x3E;
+              &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;style.css&#x22; media=&#x22;screen&#x22; title=&#x22;no title&#x22; charset=&#x22;utf-8&#x22;&#x3E;
+
+      section
+        h3 making a CSS file
+        p In Atom first click <b>New File</b> Then <b>Save</b>
+        img(src="/images/new-file.png", alt="")
+        p Save with filename as <b>stye.css</b>
+
+      section
+        h3 How to style
+        p our index.html has a &#x3C;body&#x3E;
+        p In <b>style.css</b> we write:
+        pre
+          code.language-javascript.
+            body {
+              background: green
+            }
+      section
+        h3 The result:
+        img(src="/images/greenpage.png", alt="", width="200px")
+
+      section
+        h3 AWESOME!
+        img(src="/images/haters.gif", alt="", width="250px")
+
+      section
+        h2 Thank you!
+        img(src="/images/the-end.gif", alt="", width="100%")
 
     script(src='build/build.js')
 
