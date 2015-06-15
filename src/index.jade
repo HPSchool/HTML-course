@@ -1,0 +1,152 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+    title HTML basics
+
+    link(rel='stylesheet', type='text/css', href='build/build.css')
+
+  body
+
+    article
+
+      section
+        img(src="/images/logo.png", alt="")
+        h1 HTML basiccs
+        p by peter van der meulen
+
+      section
+        h2.bullet HTML
+        ul
+          li Means: <br><strong>H</strong>yper <strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage
+          li Was invented: <br> between 1980 and 1990
+          li By: <br> <strong>Sir Tim Berners-Lee</strong> and <strong>sir Robert Cailliau</strong>
+
+      section
+        img(src="/images/boring.gif", alt="")
+        h2 Boring!
+        h3 Let's build some stuff
+
+      section
+        h2 Let's get started
+        p Open Atom on your computer
+        img(src="/images/atom.png", width="150px" alt="")
+
+      section
+        p Open Atom on your computer
+        img(src="/images/no-rush.gif", width="80%", alt="")
+
+      section
+        h3 Make a new folder on your desktop
+        img(src="/images/html-is-baws.png", alt="")
+
+      section
+        h3 let's make a new file in Atom
+        p save your untitled empty file in atom as: <br> <strong>index.html</strong> in your new folder
+        img(src="/images/brogrammer.jpg", width="200px", alt="")
+
+      section
+        h3 Write the following text
+        code.language-html.
+          html
+        p <br> And now hit:
+        img(src="/images/tab.jpg", width="200px", alt="")
+
+      section
+        h3 You now have:
+        pre
+          code.language-javascript.
+            &#x3C;html&#x3E;
+              &#x3C;head&#x3E;
+                &#x3C;title&#x3E;&#x3C;/title&#x3E;
+              &#x3C;/head&#x3E;
+              &#x3C;body&#x3E;
+
+              &#x3C;/body&#x3E;
+            &#x3C;/html&#x3E;
+
+      section
+        h3 You now have
+        img(src="/images/exploding-head.gif",  alt="")
+
+      section
+        h3 Let's add some fixes
+        pre
+          code.language-javascript.
+            &#x3C;!DOCTYPE html&#x3E;
+              &#x3C;html&#x3E;
+                &#x3C;head&#x3E;
+                  &#x3C;meta name=&#x22;charset&#x22; content=&#x22;utf-8&#x22;&#x3E;
+                  &#x3C;title&#x3E;&#x3C;/title&#x3E;
+                &#x3C;/head&#x3E;
+                &#x3C;body&#x3E;
+
+                &#x3C;/body&#x3E;
+              &#x3C;/html&#x3E;
+      section
+        h3.bullet The head section
+        pre
+          code.language-javascript.
+            &#x3C;head&#x3E;
+              &#x3C;meta name=&#x22;charset&#x22; content=&#x22;utf-8&#x22;&#x3E;
+              &#x3C;title&#x3E;&#x3C;/title&#x3E;
+            &#x3C;/head&#x3E;
+        ul
+          li Makes the page title
+          li Holds most of the styling of a page
+          li Holds most of the programming scripts of a page
+
+      section
+        h3 Let's make a title
+        pre
+          code.language-javascript.
+            &#x3C;title&#x3E;YoloSw4g&#x3C;/title&#x3E;
+        img(src="/images/page-title.png",  alt="")
+
+      section
+        h3.bullet The body section
+        pre
+          code.language-javascript.
+            &#x3C;body&#x3E;
+
+            &#x3C;/body&#x3E;
+        ul
+          li Holds everything that is visible on a page
+
+      section
+        h3.bullet Let's make some titles
+        pre
+          code.language-javascript.
+            &#x3C;body&#x3E;
+              &#x3C;h1&#x3E;YoloSw4g&#x3C;/h1&#x3E;
+              &#x3C;h2&#x3E;other yolo&#x3C;/h2&#x3E;
+              &#x3C;h3&#x3E;other sw4g&#x3C;/h3&#x3E;
+            &#x3C;/body&#x3E;
+        ul
+          li H6 is the limit!
+      section
+        h3 Results
+        img(src="/images/headers.png", alt="")
+
+      section
+        img(src="/images/high5.gif", alt="")
+
+      section
+        h3 Text
+        pre
+          code.language-javascript.
+            &#x3C;body&#x3E;
+              &#x3C;h1&#x3E;YoloSw4g&#x3C;/h1&#x3E;
+              &#x3C;h2&#x3E;other yolo&#x3C;/h2&#x3E;
+              &#x3C;h3&#x3E;other sw4g&#x3C;/h3&#x3E;
+              &#x3C;h6&#x3E;Is the limit&#x3C;/h6&#x3E;
+
+              &#x3C;p&#x3E;
+                Hello World
+              &#x3C;/p&#x3E;
+
+            &#x3C;/body&#x3E;
+
+    script(src='build/build.js')
+
